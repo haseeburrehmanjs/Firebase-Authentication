@@ -12,14 +12,14 @@ onAuthStateChanged(auth, (user) => {
         // ...
     } else {
         console.log('User is signed out');
-        window.location = 'registor.html'
+        window.location = 'index.html'
     }
 });
 
 logout.addEventListener('click', () => {
     signOut(auth).then(() => {
         // Sign-out successful.
-        window.location = 'registor.html'
+        window.location = 'index.html'
     }).catch((error) => {
         // An error happened.
         alert(error)
